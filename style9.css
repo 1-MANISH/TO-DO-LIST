@@ -1,0 +1,141 @@
+/* 
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Comforter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rowdies', cursive;
+font-family: 'Shizuru', cursive;
+font-family: 'Supermercado One', cursive;
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Supermercado One', cursive;
+    background-size: cover
+}
+
+.cantainer{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid palevioletred; */
+    width: 80vw;
+    margin: 32px auto;
+}
+.heading{
+    margin: 12px auto;
+}
+.heading font{
+    font-size: 1.7rem;
+}
+
+.inputs{
+    margin: 16px auto;
+}
+
+input[type="text"]{
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid black;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+}
+input[type="button"]{
+    padding: 10px;
+    margin: 2px;
+    font-size: 1.2rem;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-weight: bolder;
+    border: none;
+    background-color: #065DE7  ;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#btns{
+    padding: 12px;
+    margin: 2px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: orange;
+    color: whitesmoke;
+    cursor:move;
+}
+
+table{
+    width: 80vw;
+    margin: 52px auto;
+}
+th{
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+    padding: 12px 4px;
+    background-color:firebrick;
+    color: aliceblue;
+}
+td{
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
+    padding: 12px 4px;
+    text-align: center;
+    color:rgb(191, 3, 85);
+}
+.bt1{
+    padding:6px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: firebrick;
+    font-size: 1rem;
+    color: white;
+}
+.bt2{
+    padding:6px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 157, 68);
+    font-size: 1rem;
+    color: white;
+}
+/*  */
+.changebackground{
+    display: inline-block;
+}
+#bgbtn{
+    float: right;
+    padding:6px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(12, 9, 9);
+    font-size: 1.2rem;
+    color: white;
+}
+#bgbtn2{
+
+    float: right;
+    padding:6px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(240, 238, 238);
+    font-size: 1.2rem;
+    color: rgb(14, 12, 12);
+
+}
+
+
+@media all and (max-width:1300px){
+    .inputs{
+        margin: auto;
+    }
+    #box{
+        display: flex;
+        flex-direction: column;
+    }
+}

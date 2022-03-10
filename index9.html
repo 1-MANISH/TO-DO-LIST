@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-DO-LIST</title>
+    <link rel="stylesheet" href="CSS/style9.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Cinzel&family=Comforter&family=Permanent+Marker&family=Roboto+Mono:wght@700&family=Rowdies:wght@700&family=Shizuru&family=Supermercado+One&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div class="changebackground">
+        <button id="bgbtn" onclick="bgchange(this)">Dark Theme</button>
+        <button id="bgbtn2" onclick="bgchange2(this)">White Theme</button>
+    </div>
+    <div class="cantainer">
+        <div class="heading">
+            <font id="head" face="'Roboto Mono', monospace;"  >
+               Shedual Your Day Here
+            </font>
+        </div>
+        <hr noshade="">
+        <div class="inputs">
+            <form action="" name="input_text" id="input_text">
+                <div id="box">
+                    <input type="text" id="activity" placeholder="Enter Activity Name">
+                    <input type="text" id="timing" placeholder="Enter Activity Timing">
+                    <input type="text" id="hours" placeholder="Enter Activity Hours">
+                    <input type="button" id="btn" onclick="AddItem()" value="Enter/Save">
+                    <input type="button" id="btns" value="Get Task">
+                </div>
+            </form>
+        </div>
+        <div class="rejult">
+            <table id="tableItems" border="1" cellspacing="4" cellpadding="4" style="border-collapse: collapse;">
+                <tr>
+                    <th>S.NO.</th>
+                    <th>Task Name</th>
+                    <th>Timing</th>
+                    <th>Hours</th>
+                    <th colspan="2">Status</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="JS/script9.js"></script>
+</body>
+</html>
